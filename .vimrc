@@ -105,6 +105,3 @@ syntax enable
 "let g:solarized_termtrans = 1
 "colorscheme solarized
 colors zenburn
-
-autocmd vimenter * NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
