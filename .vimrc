@@ -95,8 +95,10 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-set ts=4
-set sw=4
+set rnu
+set number
+set ts=2
+set sw=2
 set expandtab
 execute pathogen#infect()
 filetype plugin indent on
