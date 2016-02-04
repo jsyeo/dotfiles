@@ -22,5 +22,9 @@ task :softlink do
   end
 end
 
-task :main => [:nvim, :zsh, :softlink] do
+task :xfce4_terminal do
+  softlink 'terminalrc', link_dest: '$HOME/.config/xfce4/terminal'
+end
+
+task :main => [:nvim, :zsh, :softlink, :xfce4_terminal] do
 end
